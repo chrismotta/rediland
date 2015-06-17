@@ -1,10 +1,19 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>games4mobi.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<img src="logo_320x50.jpg"/>
-	<div style="color:#222">chupala puto</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="logo_320x50.jpg"/>
+			</div>
+		</div>	
+	</div>
 </body>
+</html>

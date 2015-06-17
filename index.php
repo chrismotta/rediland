@@ -17,12 +17,12 @@
 		<div class="row">
 			<div class="col-md-12">
 <?php
-$feed = implode(file('http://feeds.feedburner.com/148apps'));
+$feed = implode(file('http://www.gamespot.com/feeds/mashup/?type=3'));
 $xml = simplexml_load_string($feed);
 $json = json_encode($xml);
 $array = json_decode($json,TRUE);
 
-// echo $json;
+echo $feed;
 ?>
 			</div>
 		</div>

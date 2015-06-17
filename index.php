@@ -14,6 +14,23 @@
 				<img src="logo_320x50.jpg"/>
 			</div>
 		</div>	
+		<div class="row">
+			<div class="col-md-12">
+<?php
+$feed = implode(file('http://feeds.feedburner.com/148apps'));
+$xml = simplexml_load_string($feed);
+$json = json_encode($xml);
+$array = json_decode($json,TRUE);
+
+// echo $json;
+?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="tag-320x50 center-block">
+<script type="text/javascript" src="http://ad.tmlbox.co/ad/9480/tag.js?pubid=G4M&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

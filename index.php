@@ -6,5 +6,5 @@
 
 <body>
 	<img src="logo_320x50.jpg"/>
-	<div style="color:#222">cupala puto</div>
+	<div style="color:#222">chupala puto</div>
 </body>

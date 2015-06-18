@@ -22,7 +22,10 @@
 		<div class="row">
 			<div class="col-md-12">
 <?php
-$feed = implode(file('http://www.gamespot.com/feeds/mashup/?type=3'));
+$feed = implode(file('http://www.porndig.com/rss/top/videos.xml'));
+echo $feed;
+/*
+
 $sxml = simplexml_load_string($feed);
 $json = json_encode($xml);
 $array = json_decode($json,TRUE);
@@ -32,6 +35,7 @@ $array = json_decode($json,TRUE);
 $xml = new SimpleXMLElement('<root/>');
 array_walk_recursive($sxml->channel, array ($xml, 'addChild'));
 print $xml->asXML();
+ */
 ?>
 			</div>
 		</div>

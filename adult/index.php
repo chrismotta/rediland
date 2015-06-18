@@ -23,19 +23,20 @@
 			<div class="col-md-12">
 <?php
 $feed = implode(file('http://www.porndig.com/rss/top/videos.xml'));
-echo $feed;
-/*
-
+// echo $feed;
 $sxml = simplexml_load_string($feed);
-$json = json_encode($xml);
-$array = json_decode($json,TRUE);
 
-// print_r( $sxml->channel );
+foreach ($sxml->channel->item as $item) {
+	echo '<div>';
+	echo '	<div class="titulo">';
+	echo '		<a href="'.$item->link.'">'.$item->title.'</a>';
+	echo '	</div>';
+	echo '	<div>';
+	echo $item->description;
+	echo '	</div>';
+	echo '</div>';
+}
 
-$xml = new SimpleXMLElement('<root/>');
-array_walk_recursive($sxml->channel, array ($xml, 'addChild'));
-print $xml->asXML();
- */
 ?>
 			</div>
 		</div>

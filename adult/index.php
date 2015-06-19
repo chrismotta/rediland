@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>games4mobi.com</title>
+    <title>slutsvids.com</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +26,7 @@ $feed = implode(file('http://www.porndig.com/rss/top/videos.xml'));
 // echo $feed;
 $sxml = simplexml_load_string($feed);
 
+$i = 0;
 foreach ($sxml->channel->item as $item) {
 	echo '<div>';
 	echo '	<div class="titulo">';
@@ -35,6 +36,9 @@ foreach ($sxml->channel->item as $item) {
 	echo $item->description;
 	echo '	</div>';
 	echo '</div>';
+
+	$i++;
+	if($i >= 5) break;
 }
 
 ?>

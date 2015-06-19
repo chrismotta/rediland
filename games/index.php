@@ -16,7 +16,24 @@
 		</div>	
 		<div class="row">
 			<div class="tag-320x50 center-block">
-<script type="text/javascript" src="http://ad.tmlbox.co/ad/9480/tag.js?pubid=G4M&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script>
+				<!-- Mars -->
+				<!-- TML AD tag -->
+				<script type="text/javascript" src="http://ad.tmlbox.co/ad/9480/tag.js?pubid=ROT&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script><!-- end AD tag -->
+			</div>
+			<div class="tag-320x50 center-block">
+				<!-- Results -->
+				<!-- TML AD tag -->
+				<script type="text/javascript" src="http://ad.tmlbox.co/ad/9548/tag.js?pubid=ROT&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script><!-- end AD tag -->
+			</div>
+			<div class="tag-320x50 center-block">
+				<!-- Super Ads -->
+				<!-- TML AD tag -->
+				<script type="text/javascript" src="http://ad.tmlbox.co/ad/9549/tag.js?pubid=ROT&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script><!-- end AD tag -->
+			</div>
+			<div class="tag-320x50 center-block">
+				<!-- App Media Network -->
+				<!-- TML AD tag -->
+				<script type="text/javascript" src="http://ad.tmlbox.co/ad/9550/tag.js?pubid=ROT&mediatype=mobileweb&channel=IAB1&channel=IAB12&channel=IAB6&channel=IAB18"></script><!-- end AD tag -->
 			</div>
 		</div>
 		<div class="row">
@@ -32,7 +49,7 @@ foreach ($sxml->channel->item as $item) {
 	echo '	<div class="titulo">';
 	echo '		<a href="'.$item->link.'">'.$item->title.'</a>';
 	echo '	</div>';
-	echo '	<div>';
+	echo '	<div class="feed-content">';
 	echo $item->description;
 	echo '	</div>';
 	echo '</div>';

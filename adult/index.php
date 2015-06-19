@@ -32,7 +32,7 @@ foreach ($sxml->channel->item as $item) {
 	echo '	<div class="titulo">';
 	echo '		<a href="'.$item->link.'">'.$item->title.'</a>';
 	echo '	</div>';
-	echo '	<div>';
+	echo '	<div class="feed-content">';
 	echo $item->description;
 	echo '	</div>';
 	echo '</div>';

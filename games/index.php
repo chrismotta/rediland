@@ -26,6 +26,7 @@ $feed = implode(file('http://www.gamespot.com/feeds/mashup/?type=3'));
 // echo $feed;
 $sxml = simplexml_load_string($feed);
 
+$i=0;
 foreach ($sxml->channel->item as $item) {
 	echo '<div>';
 	echo '	<div class="titulo">';
@@ -35,6 +36,10 @@ foreach ($sxml->channel->item as $item) {
 	echo $item->description;
 	echo '	</div>';
 	echo '</div>';
+
+
+	$i++;
+	if($i >= 5) break;
 }
 
 ?>

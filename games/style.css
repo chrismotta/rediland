@@ -14,3 +14,7 @@ body {
 	margin: 20px 0px;
 	padding: 10px 0px;
 }
+
+img {
+	max-width: 100% !important;
+}

@@ -37,7 +37,6 @@ foreach ($sxml->channel->item as $item) {
 	echo '	</div>';
 	echo '</div>';
 
-
 	$i++;
 	if($i >= 5) break;
 }

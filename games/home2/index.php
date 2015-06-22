@@ -1,10 +1,10 @@
-<?php // tag smaato direct // ?>
+<?php // kimia mainstream // ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>games4mobi.com</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -12,29 +12,12 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<img src="logo_320x50.jpg"/>
+				<img src="../logo_320x50.jpg"/>
 			</div>
 		</div>	
 		<div class="row">
 			<div class="tag-320x50 center-block">
-				<!-- Smaato -->
-				<div id="smaatoad" style="padding: 0px"></div>
-				<script type="text/javascript" src="http://soma.smaato.net/oapi/js/smaatoAdTag.js"></script>
-				<script>
-					function callBackForSmaato(status){
-						if(status == "SUCCESS"){
-							console.log('callBack is being called with status : ' + status);
-						} else if (status == "ERROR"){
-							console.log('callBack is being called with status : ' + status);
-						}
-					}; 
-					SomaJS.loadAd({
-						adDivId : "smaatoad",
-						publisherId: 1100003082,
-						adSpaceId: 130023724,
-						dimension: "xxlarge"
-					},callBackForSmaato);
-				</script>			
+				<!-- New Tag -->
 			</div>
 		</div>
 		<div class="row">
